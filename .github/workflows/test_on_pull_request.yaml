@@ -16,11 +16,10 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: 3.11  # Pass the desired Python version here
+          python-version: 3.11 #
 
       - name: Install Dependencies
-        run: pip install -r requirements.txt  # Install your project's dependencies
+        run: pip install -r requirements.txt
 
       - name: Run Tests
-        run: pytest  # Replace with the command to run your tests
-
+        run: pytest
