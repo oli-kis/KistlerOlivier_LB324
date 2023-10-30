@@ -1,4 +1,4 @@
-# Use an official Python runtime as the base image
+# Select a Python image
 FROM python:3.9-slim
 
 # Set the working directory in the container
@@ -7,13 +7,13 @@ WORKDIR /app
 # Copy the requirements file into the container
 COPY requirements.txt .
 
-# Install the required packages
+# Install the requierement
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy the rest of the application code into the container
+# Copy the rest
 COPY . .
 
-# Expose the port the app will run on
+# Expose the port
 EXPOSE 5000
 
 # Define the command to run the application

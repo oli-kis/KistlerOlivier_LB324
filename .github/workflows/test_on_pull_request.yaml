@@ -2,24 +2,30 @@ name: Test on Pull Request
 
 on:
   pull_request:
+    # Define which branches trigger the job
     branches:
       - dev
 
 jobs:
   test:
+    #Define system
     runs-on: ubuntu-latest
 
     steps:
+      # Check out of the Code
       - name: Check Out Code
         uses: actions/checkout@v2
 
+      # Set up the python environment with the correct version
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: 3.11 #
+          python-version: 3.11
 
+      # Install the dependencies that are needed to run
       - name: Install Dependencies
         run: pip install -r requirements.txt
 
+      # Run the tests
       - name: Run Tests
         run: pytest
