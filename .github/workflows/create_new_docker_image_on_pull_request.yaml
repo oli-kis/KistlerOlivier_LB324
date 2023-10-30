@@ -27,3 +27,6 @@ jobs:
           context: .
           push: true
           tags: olikis/lb324-olivierkistler:latest
+
+      - name: Deploy to Render
+        run: curl -X POST 'https://api.render.com/deploy/srv-ckvlph237rbc7392dvsg?key=_uR-TjI5n6o'
