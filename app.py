@@ -43,6 +43,7 @@ def logout():
     return redirect(url_for("index"))
 
 
+# Add Entry with happiness
 @app.route("/add_entry", methods=["POST"])
 def add_entry():
     content = request.form.get("content")
