@@ -11,7 +11,7 @@ jobs:
     # Define System
     runs-on: ubuntu-latest
     steps:
-      # Check out the Repo
+      # Check out the Code
       - name: Check out the code
         uses: actions/checkout@v2
 
@@ -24,10 +24,10 @@ jobs:
         uses: docker/login-action@v1
         with:
           username: olikis
-          # Get the password, that you defined in the secrets tab in your repo
+          # Get the password, that I defined in the secrets tab in my repo
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
 
-      # Build and push
+      # Build and push to docker
       - name: Build and push Docker image
         uses: docker/build-push-action@v2
         with:

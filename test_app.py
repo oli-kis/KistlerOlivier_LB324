@@ -2,8 +2,6 @@ from app import app, entries
 
 import pytest
 
-# Use Flask's test client for testing
-
 
 @pytest.fixture()
 def client():
