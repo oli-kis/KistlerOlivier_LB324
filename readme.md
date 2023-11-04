@@ -29,6 +29,8 @@ Docker würde die Funktion eigentlich auch unterstützen bei jedem neuen commit 
 Nun wird mein Image automatisch gepusht, wenn Änderungen in GitHub vorgenommen werden. Der nächste Schritt war es, Render zu automatisieren. Render stellt eine URL zur Verfügung, welche die App automatisch neu deployed, wenn sie aufgerufen wird. Ich konnte also nur noch ein Job hinzufügen, welcher die URL aufruft, nachdem das Docker-Image gepusht wurde. Daraus ergibt sich folgendes File und ein vollautomatischer Deployprozess. 
 
 Link zu meinem Docker Image: [Image](https://hub.docker.com/repository/docker/olikis/lb324-olivierkistler/general)
+
 Link zur Website (Könnte länger zum Laden brauchen, da Website nur bei Aufruf gestartet wird): [Website](https://lb324-olivierkistler.onrender.com)
+
 Um Beweisbilder zu sehen, besehen Sie bitte meine Dokumentation
 
